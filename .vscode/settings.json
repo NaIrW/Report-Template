@@ -1,0 +1,3 @@
+{
+    "latex-workshop.latex.external.build.command": "tectonic -X build --print"
+}
