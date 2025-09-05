@@ -1,0 +1,26 @@
+% ---- Bra-Ket Notation ----
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+
+% ---- Quantum Gates ----
+\newcommand{\Hgate}{\mathrm{H}}
+\newcommand{\Xgate}{\mathrm{X}}
+\newcommand{\Ygate}{\mathrm{Y}}
+\newcommand{\Zgate}{\mathrm{Z}}
+\newcommand{\Sgate}{\mathrm{S}}
+\newcommand{\Tgate}{\mathrm{T}}
+\newcommand{\RXgate}[1]{\mathrm{R}_x(#1)}
+\newcommand{\CNOT}{\mathrm{CNOT}}
+
+% ---- Matrix of Gates ----
+\newcommand{\Tmatrix}{\begin{bmatrix} 1 & 0 \\ 0 & e^{i\pi / 4} \end{bmatrix}}
+\newcommand{\Xmatrix}{\begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}}
+\newcommand{\Ymatrix}{\begin{bmatrix} 0 & -i \\ i & 0 \end{bmatrix}}
+\newcommand{\Zmatrix}{\begin{bmatrix} 1 & 0 \\ 0 & -1 \end{bmatrix}}
+\newcommand{\RXmatrix}[1]{\begin{bmatrix} \cos\frac{#1}{2} & -i\sin\frac{#1}{2} \\ -i\sin\frac{#1}{2} & \cos\frac{#1}{2} \end{bmatrix}}
+\newcommand{\CNOTmatrix}{\begin{bmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 1 \\  0 & 0 & 1 & 0\end{bmatrix}}
+\newcommand{\Hmatrix}{\frac{1}{\sqrt{2}}\begin{bmatrix} 1 & 1 \\ 1 & -1 \end{bmatrix}}
+\newcommand{\Smatrix}{\begin{bmatrix} 1 & 0 \\ 0 & i \end{bmatrix}}
+
+\newcommand{\colvec}[1]{\begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\rowvec}[1]{\begin{bmatrix} #1 \end{bmatrix}}
